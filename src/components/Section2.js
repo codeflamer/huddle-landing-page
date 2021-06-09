@@ -85,5 +85,4 @@ img{
 }
 `
 
-
 export default Section2
