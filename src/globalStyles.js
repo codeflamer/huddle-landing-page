@@ -19,6 +19,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     font-size:14px;
     color:var(--textColor);
+    @media(max-width:768px){
+      font-size:13px;
+    }
   }
   a{
       color:var(--text-color);
