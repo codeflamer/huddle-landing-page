@@ -20,11 +20,10 @@ const Section3 = () => {
 }
 
 const Container = styled.section`
+margin-top:40px;
 padding:10px 70px;
-// border:1px solid red;
 display:flex;
 flex-direction:column;
-// align-items:center;
 @media(max-width:768px){
        padding:10px 15px;
     }

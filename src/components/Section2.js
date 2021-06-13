@@ -4,6 +4,9 @@ import styled from 'styled-components';
 const Section2 = () => {
     return (
         <Container>
+             <TopCover>
+                <img src='../images/bg-curvy-desktop.svg' alt=''/>
+            </TopCover>
             <Content>
                 <Feature>
                     <ImgCont>
@@ -39,20 +42,40 @@ const Section2 = () => {
 }
 
 const Container = styled.section`
-padding:10px 15px;
-padding-top:60px;
 display:flex;
 flex-direction:column;
 align-items:center;
+position:relative
 `;
+
+const TopCover = styled.div`
+display:flex;
+flex-direction:column;
+width:100%;
+position:absolute;
+top:-320px;
+    img{
+        width:100%;
+        height:320px;
+    }
+@media(max-width:768px){
+top:-130px;
+    img{
+        height:130px;
+    }
+}
+`
 const Content = styled.div`
     // border:1px solid blue;
+    // margin-top:60px;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     max-width:750px;
     grid-gap:50px;
     @media(max-width:768px){
+        margin-top:220px;
         grid-template-columns: repeat(1, 1fr);
+        padding:10px 15px;
     }
 `;
 const Feature = styled.div`

@@ -45,7 +45,7 @@ const Container = styled.section`
 padding:10px 85px;
 @media(max-width:900px){
     display:flex;
-flex-direction:column;
+    flex-direction:column;
     padding:10px 30px;
     align-items:center;
 }

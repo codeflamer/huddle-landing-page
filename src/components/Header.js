@@ -20,6 +20,7 @@ const Header = () => {
 
 const Navigation = styled.header`
 // width:100%;
+background:hsl(218deg 23% 15%);
 `
 const Container = styled.nav`
     // border:1px solid red;
